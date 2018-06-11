@@ -51,7 +51,9 @@ public class Clue : MonoBehaviour {
         posInClueList = -1;
         numConnections = 0;
         
-        boardImg.active = true;
+        clueBoard.transform.Find(clueName).gameObject.SetActive(false);
+
+        
         
         clueBoard = GameObject.Find("clueBoard").GetComponent<ClueBoard>();
         
@@ -72,12 +74,12 @@ public class Clue : MonoBehaviour {
         
         if(imgVisible){
             // img code on
-            boardImg.active = true;
+        clueBoard.transform.Find(clueName).gameObject.SetActive(true);
 
         }
         else{
             // img code off
-            boardImg.active = false;
+        clueBoard.transform.Find(clueName).gameObject.SetActive(false);
 
         }
     }

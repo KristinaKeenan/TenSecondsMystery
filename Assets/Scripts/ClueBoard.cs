@@ -18,24 +18,23 @@ public class ClueBoard : MonoBehaviour {
     
     public Clue tempClue1, tempClue2;
     public int tempClueCount;
+    
+    public ClueBoard clueBoard;
 
 	// Use this for initialization
 	void Start () {
         
         clickedClueList = new List<Clue>();
-        //int validClues = ;
         currentValidClues = 0;
         lengthCCL = -1;
         tempClueCount = 0;
 		
         testRect = GameObject.Find("testRect").GetComponent<RectTransform>();
-      //  blehRect = GameObject.Find("testRect").GetComponent<Rect>();
-       // testRect.localScale = new Vector3(2f,1f,1f);
         testRect.Translate(1,10,0);
         
+        clueBoard = GameObject.Find("clueBoard").GetComponent<ClueBoard>();
         
-        //blehRect = Instantiate (testRect, new Rect(-217,101,35,118));
-        //generateLine();
+     
         
 	}
     
@@ -89,34 +88,21 @@ public class ClueBoard : MonoBehaviour {
         float idkMath = ((Mathf.Atan(slope)) * 180) / Mathf.PI;
         print(idkMath + "testinghere");
 
-       // if(idkMath > 0){
             return(idkMath);
-      //  }
-       // else{
-       //     return(idkMath+180);
-      //  }
+     
         
     }
     
     public void generateLine(float x1, float y1, float x2, float y2){
-        
-      //  float x1 = 500;
-     //   float y1 = 69;
-      //  float x2 = 83;
-     //   float y2 = 301;
-        print("x1: "+x1+" y1: "+y1);
+     
         blehRect = Instantiate (testRect, new Vector3(x1,y1,0),Quaternion.identity);
         blehRect.transform.SetParent(canvas.transform);
-        print("1: "+blehRect.position);
         blehRect.pivot = new Vector2(1, 0.5f);
-     //   blehRect.sizeDelta = new Vector2 (381, 10);
 
         blehRect.sizeDelta = new Vector2 (calcDistPoints(x1,x2,y1,y2), 10);
-     //   print(calcDistPoints(x1,x2,y1,y2));
-     //   print(calcSlopePoints(x1,x2,y1,y2));
+
 
         blehRect.Rotate(0, 0, (int)(calcSlopePoints(x1,x2,y1,y2)));
-        //blehRect.Rotate(0, 0, 180);
 
         blehRect.SetSiblingIndex (1);
 
@@ -124,6 +110,20 @@ public class ClueBoard : MonoBehaviour {
     
     
     
+    
+     public void toggleImageVisibility(string clueName){
+    
+        clueBoard.transform.Find(clueName).gameObject.SetActive(true);
+
+
+    }
+    
+    public void toggleImageVisibilityR(string clueName){
+        
+        clueBoard.transform.Find(clueName).gameObject.SetActive(false);
+
+        
+    }
     
 	// Update is called once per frame
 	void Update () {

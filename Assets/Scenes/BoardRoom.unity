@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Phone
   inInv: 0
   isValid: 1
   boardImg: {fileID: 197045689}
@@ -494,7 +494,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 197045691}
 --- !u!114 &197045692
 MonoBehaviour:
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Splinter
   inInv: 0
   isValid: 1
   boardImg: {fileID: 432486332}
@@ -853,7 +853,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 432486334}
 --- !u!114 &432486335
 MonoBehaviour:
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Railing
   inInv: 0
   isValid: 1
   boardImg: {fileID: 674288440}
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 674288445}
 --- !u!1 &710835303
 GameObject:
@@ -1380,7 +1380,7 @@ RectTransform:
   m_Children:
   - {fileID: 1410069587}
   m_Father: {fileID: 1773407153}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1822,7 +1822,7 @@ GameObject:
   - component: {fileID: 957218562}
   - component: {fileID: 957218561}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Texts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,7 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Texts
   inInv: 0
   isValid: 0
   boardImg: {fileID: 957218559}
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 957218561}
 --- !u!114 &957218562
 MonoBehaviour:
@@ -2276,7 +2276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue1
+  clueName: Blood
   inInv: 0
   isValid: 1
   boardImg: {fileID: 1200019755}
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1200019760}
 --- !u!1 &1213593234
 GameObject:
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Bracelet
   inInv: 0
   isValid: 1
   boardImg: {fileID: 1392669215}
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1392669217}
 --- !u!114 &1392669218
 MonoBehaviour:
@@ -3069,7 +3069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Bat
   inInv: 0
   isValid: 0
   boardImg: {fileID: 1674763034}
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1674763036}
 --- !u!114 &1674763037
 MonoBehaviour:
@@ -3282,7 +3282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Stuff
   inInv: 0
   isValid: 1
   boardImg: {fileID: 1677291325}
@@ -3295,7 +3295,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1677291327}
 --- !u!114 &1677291328
 MonoBehaviour:
@@ -3383,6 +3383,7 @@ GameObject:
   - component: {fileID: 1773407151}
   - component: {fileID: 1773407150}
   - component: {fileID: 1773407154}
+  - component: {fileID: 1773407155}
   m_Layer: 5
   m_Name: clueBoard
   m_TagString: Untagged
@@ -3469,8 +3470,8 @@ RectTransform:
   - {fileID: 1677291326}
   - {fileID: 1864663985}
   - {fileID: 1392669216}
-  - {fileID: 256209944}
   - {fileID: 710835304}
+  - {fileID: 256209944}
   - {fileID: 940596325}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -3501,6 +3502,20 @@ MonoBehaviour:
   tempClue1: {fileID: 0}
   tempClue2: {fileID: 0}
   tempClueCount: 0
+  clueBoard: {fileID: 1773407154}
+--- !u!114 &1773407155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773407149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f734988a7e09c410faa1d04bb78d46d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryClues: []
+  clueBoard: {fileID: 1773407154}
 --- !u!1 &1776834698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Wrench
   inInv: 0
   isValid: 0
   boardImg: {fileID: 1776834698}
@@ -3564,7 +3579,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1776834700}
 --- !u!114 &1776834701
 MonoBehaviour:
@@ -3764,7 +3779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996806103f3944159e322553f838453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: Clue2
+  clueName: Photo
   inInv: 0
   isValid: 1
   boardImg: {fileID: 1864663984}
@@ -3777,7 +3792,7 @@ MonoBehaviour:
   canInteract: 0
   isSelected: 0
   posInClueList: 0
-  clueBoard: {fileID: 0}
+  clueBoard: {fileID: 1773407154}
   selfClue: {fileID: 1864663986}
 --- !u!114 &1864663987
 MonoBehaviour:
