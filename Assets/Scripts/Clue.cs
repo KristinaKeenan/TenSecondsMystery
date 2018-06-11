@@ -37,7 +37,7 @@ public class Clue : MonoBehaviour {
     public Clue selfClue;
     
     
-    
+    public Image tack;
     
 	// Use this for initialization
 	void Start () {
@@ -50,7 +50,8 @@ public class Clue : MonoBehaviour {
 		isSelected = false;
         posInClueList = -1;
         numConnections = 0;
-        
+        tack.enabled = false;
+
         clueBoard.transform.Find(clueName).gameObject.SetActive(false);
 
         
@@ -103,6 +104,7 @@ public class Clue : MonoBehaviour {
     //onclick
     public void onButtonClick(){
         
+        tack.enabled = true;
        // if(numConnections < 2){
         
         if(!inClueList){

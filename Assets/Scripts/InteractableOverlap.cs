@@ -37,7 +37,7 @@ public class InteractableOverlap : MonoBehaviour {
             if(closeup.activeSelf == true){
                     
                     //add to inventory
-                    
+                    //connect to inventory script
                 
                     //close window
                     closeup.SetActive(false);
