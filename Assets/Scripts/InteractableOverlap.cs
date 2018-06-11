@@ -6,6 +6,7 @@ public class InteractableOverlap : MonoBehaviour {
    
     public GameObject interactUI;
     public GameObject closeup;
+    public AudioSource cameraClick;
     
 	void OnTriggerEnter(Collider other){
         
@@ -25,11 +26,35 @@ public class InteractableOverlap : MonoBehaviour {
              
             if (interactUI.activeSelf == true){
                 
-                print("Opening image");
+                cameraClick.Play();
                 closeup.SetActive(true);
-                interactUI.SetActive(false);
+                interactUI.SetActive(false);   
+            }
+        }
+            
+        if(Input.GetKeyDown("return")){
+            
+            if(closeup.activeSelf == true){
+                    
+                    //add to inventory
+                    
                 
+                    //close window
+                    closeup.SetActive(false);
+                    
+                } 
+            }
+        
+        if(Input.GetKeyDown("delete")){
+            
+            if(closeup.activeSelf == true){
+                    
+                    //don't add to inventory
+                    
+                    //close window
+                    closeup.SetActive(false);
+                    
+                } 
             }
         }
 	}
-}
