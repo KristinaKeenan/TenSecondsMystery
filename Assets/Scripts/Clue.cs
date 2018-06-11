@@ -134,7 +134,8 @@ public class Clue : MonoBehaviour {
             
                 
             
-                clueBoard.tempClueCount = 0;
+                clueBoard.tempClueCount = 1;
+                    clueBoard.tempClue1 = clueBoard.tempClue2;
             }
 
             }
