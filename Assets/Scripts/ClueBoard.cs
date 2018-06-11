@@ -20,6 +20,8 @@ public class ClueBoard : MonoBehaviour {
     public int tempClueCount;
     
     public ClueBoard clueBoard;
+    
+    public List<RectTransform> strings;
 
 	// Use this for initialization
 	void Start () {
@@ -34,16 +36,34 @@ public class ClueBoard : MonoBehaviour {
         
         clueBoard = GameObject.Find("clueBoard").GetComponent<ClueBoard>();
         
-     
+        List<RectTransform> strings = new List<RectTransform>();
+
         
 	}
     
   
 	
     public void resetCCL(){
+        
+        foreach (Clue x in clickedClueList)  // Now disable them all in one go.
+        {
+            x.connection1 = false;
+            x.connection2 = false;
+            x.inClueList = false;
+            x.isSelected = false;
+            x.posInClueList = -1;
+            x.numConnections = 0;
+            x.tack.enabled = false;
+        }
         clickedClueList = new List<Clue>();
         currentValidClues = 0;
         lengthCCL = -1;
+        
+        foreach (RectTransform y in strings){
+            Destroy(y.gameObject);
+            
+        }
+        strings = new List<RectTransform>();
     }
     
     public void addToCCL(Clue clickedClue){
@@ -105,6 +125,8 @@ public class ClueBoard : MonoBehaviour {
         blehRect.Rotate(0, 0, (int)(calcSlopePoints(x1,x2,y1,y2)));
 
         blehRect.SetSiblingIndex (1);
+        
+        strings.Add(blehRect);
 
     }
     

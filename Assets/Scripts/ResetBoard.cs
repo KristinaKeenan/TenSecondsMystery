@@ -19,7 +19,9 @@ public class ResetBoard : MonoBehaviour {
     
     public void resetBoard(){
         
-        
+        //    resetCCL
+        clueBoard.resetCCL();
+
         
     }
     
