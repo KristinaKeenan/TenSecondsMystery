@@ -1,12 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InteractableOverlap : MonoBehaviour {
    
     public GameObject interactUI;
     public GameObject closeup;
     public AudioSource cameraClick;
+    public Inventory inventory;
+    public string clueName;
+    public Canvas clueBoard;
+    
+    
+    void Start(){
+        
+                clueBoard.enabled = false;
+
+    }
+    
     
 	void OnTriggerEnter(Collider other){
         
@@ -38,6 +50,8 @@ public class InteractableOverlap : MonoBehaviour {
                     
                     //add to inventory
                     //connect to inventory script
+                    inventory.addClue(clueName);
+                    
                 
                     //close window
                     closeup.SetActive(false);
@@ -56,5 +70,13 @@ public class InteractableOverlap : MonoBehaviour {
                     
                 } 
             }
-        }
+        if(Input.GetKeyDown(KeyCode.Return)){
+            
+            
+                    clueBoard.enabled = true;
+
+        }    
+    
+    
+    }
 	}

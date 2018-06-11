@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/BoardRoom.unity
+- path: Assets/Scenes/CrimeScene.unity
   isLoaded: 1
   isActive: 1
