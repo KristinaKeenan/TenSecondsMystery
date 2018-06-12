@@ -105,9 +105,9 @@ public class ClueBoard : MonoBehaviour {
         
        
         float slope = (y2-y1)/(x2-x1);
-        print("slope: "+slope);
+    //    print("slope: "+slope);
         float idkMath = ((Mathf.Atan(slope)) * 180) / Mathf.PI;
-        print(idkMath + "testinghere");
+      //  print(idkMath + "testinghere");
 
             return(idkMath);
      

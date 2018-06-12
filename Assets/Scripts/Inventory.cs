@@ -1,22 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
     
     public List<string> inventoryClues;
     
     public ClueBoard clueBoard;
+    
+    public Button startGame;
+    public GameObject startScreen;
 
 	// Use this for initialization
 	void Start () {
         inventoryClues = new List<string>();
         clueBoard = GameObject.Find("clueBoard").GetComponent<ClueBoard>();
+        startGame.onClick.AddListener(startGameFunc);
 		
 	}
+    
+    public void startGameFunc(){
+        
+        startScreen.SetActive(false);
+        
+    }
 	
     public void addClue(string clueToAdd){
-        print("addingClue");
+        //print("addingClue");
         //add clue to inventory
         inventoryClues.Add(clueToAdd);
         
@@ -42,10 +53,20 @@ public class Inventory : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
-        
+       /* 
         if (Input.GetKeyDown("space")){
             addClue("Blood");
             addClue("Photo");
+            addClue("Wrench");
+            addClue("Bracelet");
+            addClue("Railing");
+            addClue("Phone");
+            addClue("Texts");
+            addClue("Splinter");
+            addClue("Bat");
+            addClue("Stuff");
+
+
             
         }
         if (Input.GetKeyDown("up")){
@@ -53,7 +74,7 @@ public class Inventory : MonoBehaviour {
             
         }
         
-           
+           */
 		
 	}
 }
