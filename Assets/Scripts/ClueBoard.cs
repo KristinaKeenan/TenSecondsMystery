@@ -64,6 +64,7 @@ public class ClueBoard : MonoBehaviour {
             
         }
         strings = new List<RectTransform>();
+        tempClueCount = 0;
     }
     
     public void addToCCL(Clue clickedClue){
