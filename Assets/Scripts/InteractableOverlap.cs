@@ -70,10 +70,16 @@ public class InteractableOverlap : MonoBehaviour {
                     
                 } 
             }
-        if(Input.GetKeyDown(KeyCode.Return)){
+        if(Input.GetKeyDown(KeyCode.G)){
             
             
                     clueBoard.enabled = true;
+
+        }    
+         if(Input.GetKeyDown(KeyCode.H)){
+            
+            
+                    clueBoard.enabled = false;
 
         }    
     
